@@ -47,6 +47,14 @@ nav ul {
     margin: 0;
 }
 
+nav ul li a.active {
+  border-bottom: 3px solid #eef1f2; /* farven på stregen */
+  padding-bottom: 4px;              /* lidt luft mellem tekst og streg */
+  font-weight: 600;                 /* gør teksten lidt tydeligere */
+  color: #eef1f2;                   /* samme farve som stregen for konsistens */
+}
+
+
 nav li {
     padding: 0.8em;
     text-align: center;
@@ -164,6 +172,7 @@ footer a:hover {
     border-radius: 8px;
     text-decoration: none;
     transition: background-color 0.3s ease;
+    margin-top: 1em;
 }
 
 .contact-button:hover { background-color: #005fa3; }

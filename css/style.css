@@ -2,13 +2,15 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+
+/* body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: 'Inter', 'Segoe UI', 'Arial', 'Helvetica', sans-serif;
+    line-height: 1.5; /*god standard for læsbarhed */
+
 }
 
-body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-}
 
 h1 { font-size: 2rem; font-weight: bold; color: #222; }
 h2 { font-size: 1.5rem; font-weight: 600; color: #333; }

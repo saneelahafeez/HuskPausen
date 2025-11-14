@@ -2,13 +2,14 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    
+}
 
-/* body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-    font-family: 'Inter', 'Segoe UI', 'Arial', 'Helvetica', sans-serif;
+html,body{
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* font-family: 'Inter', 'Segoe UI', 'Arial', 'Helvetica', sans-serif; */
     line-height: 1.5; /*god standard for læsbarhed */
-
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -89,9 +90,9 @@ button#bars {
  
 /* --- MAIN INDHOLD --- */
 main {
+    flex: 1;   /* udfylder alt ledigt rum og skubber footeren ned */
     margin: 2em 2em;
 }
-
 section {
     margin-bottom: 2em;
 }

@@ -84,15 +84,28 @@ button#bars {
     width: 100%;
 }
 
-/* /* Når burgermenuen er åben */
-/* header nav.show li a:hover { */
-    /* color: rgb(4, 9, 0); farven du vil have ved hover */
+ /* Når burgermenuen er åben, Det aktive link bliver tydeligt når man hover */
+header nav.show li a:hover { 
+ color:rgb(14, 31, 1); /*farven du vil have ved hover */ 
+}
  
 /* --- MAIN INDHOLD --- */
 main {
     flex: 1;   /* udfylder alt ledigt rum og skubber footeren ned */
     margin: 2em 2em;
 }
+
+main section p {
+
+line-height: 20px;
+
+}
+
+.style_img {
+
+        margin-top: 20px;
+}
+
 section {
     margin-bottom: 2em;
 }
@@ -229,6 +242,11 @@ footer a:hover {
         gap: 2em;
     }
 
+    main section p{
+
+        line-height: 40px;
+    }
+
     main section:nth-of-type(1) div {
     width: 50%;  
 }
@@ -243,6 +261,11 @@ footer a:hover {
     /* Specifik margin for MentalRo */
     body.MentalRo main {
     margin: 1em 5em 2em 3em; /* top, højre, bund, venstre */
+}
+
+.style_vd{
+    height: 200px;
+    width: 100%;
 }
 
     footer {

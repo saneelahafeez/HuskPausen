@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Kontaktform</title>
 <link rel="stylesheet" href="css/style.css">
+<script src="https://kit.fontawesome.com/faeb6a1351.js" crossorigin="anonymous"></script>
+<script src="js/navigation.js" defer></script>
 </head>
 
 <body>
@@ -16,9 +18,9 @@
 
         <nav>
             <ul>
-                <li><a href="index.html" class="active">Forside</a></li>
+                <li><a href="index.html">Forside</a></li>
                 <li><a href="MentalRo.html">Mental Ro</a></li>
-                <li><a href="Kontakt.html">Kontakt</a></li>
+                <li><a href="Kontakt.html" Class="active">Kontakt</a></li>
             </ul>
         </nav>
 
@@ -27,81 +29,43 @@
         </button>
 
      </header>
-
-	
-
-	<main class="kontaktform">
-        <div class="a">
-		<h1>Kontakt Formular</h1>
+<main>
+    <section class="kontakt_container">
+        <label for="Fornavn">Fornavn</label><input type="text" id="Fornavn" name="Fornavn" class="txt_style" required> 
+        <label for="Email">E-mail</label><input type="email" id="Email" name="email" class="txt_style" required> 
+        <label for="Telefonnummer">Telefonnummer</label><input type="number" id="Telefonnummer" name="Telefonnummer" class="txt_style" required> 
         
-        <p class="kontakt-tekst">Skriv til os via kontaktformularen og så vender vi tilbage til dig</p>
-	
-		<form>
-			<label for="navn">Navn</label> <!--'for' knyttes til <input> med id af samme navn -->
-			<input id="navn" type="text" required>
-			
-			<label for="adresse">Adresse</label><!--class="visually-hidden" kan bruges når man ønsker at bruge placeholder i input istedet for label, men stadig ønsker at have en tilgængelig mulighed som kan læses af en skærmlæser-->
-			<input id="adresse" type="text">
-			
-			<label for="telefon">Telefonnummer</label>
-			<input id="telefon" type="tel">
-			
-			<label for="mail">E-mail</label>
-			<input id="mail" type="email" required>
-
-			<div class="custom-select">
-				<label for="region">Region</label>
-				<select id="region" name="select">
-					<option value="0" selected disabled>Vælg region</option> <!--Denne gør at der ikke autovælges en region for brugeren-->
-					<option value="1">Syddanmark</option>
-					<option value="2">Sjælland</option>
-					<option value="3">Hovedstaden</option>
-					<option value="4">Nordjylland</option>
-					<option value="5">Midtjylland</option>
-				</select>
-			</div>
-
-			<fieldset class="checkbox"> <!--Checkbox giver muligheden for at vælge flere 'services' på en gang. -->
+        <fieldset class="checkbox"> 
 				<legend>Hvad ønsker du at snakke om?</legend>
 				<div>
-					<input type="checkbox" name="services" id="rengøring" value="Rengøring">
-					<label for="rengøring">Stress</label>
+					<input type="checkbox" name="emne1" id="Stress1" value="Stress">
+					<label for="Stress">Stress</label>
 				</div>
 					
 				<div>
-					<input type="checkbox" name="services" id="vinduespudser" value="Vinduespudser">
-					<label for="vinduespudser">Præstationspres</label>
+					<input type="checkbox" name="emne2" id="Præstationspres" value="Præstationspres">
+					<label for="Præstationspres">Præstationspres</label>
 				</div>
 					
 				<div>
-					<input type="checkbox" name="services" id="bilrengoring" value="Bilrengøring">
-					<label for="bilrengoring">Mangel på energi</label>
+					<input type="checkbox" name="emne3" id="MPE" value="MPE">
+					<label for="MPE">Mangel på energi</label>
 				</div>
 					
 				<div>
-					<input type="checkbox" name="services" id="havearbejde" value="Havearbejde">
-					<label for="havearbejde">Andet</label>
+					<input type="checkbox" name="emne4" id="andet" value="andet">
+					<label for="andet">Andet</label>
 				</div>
 			</fieldset>
-				
-			<label for="besked">Besked</label>
+
+            <label for="besked">Besked</label>
+			<textarea name="besked" id="besked" rows="20" cols="60" class="ar_style"></textarea> 
+
+            <button class="style_buttom" type="submit">Send Besked</button>
             
-			<textarea name="besked" id="besked" rows="8" cols="60"></textarea> <!--Textarea giver mulighed for at skrive en større besked. Størrelse defineres ved brug af rows og cols-->	
-				
-			<fieldset> <!-- <fieldset> grupperer relaterede elementer i en form. Den tilføjer endvidere en streg rundt om de relaterede elementer. <legend> definere en titel/caption for en fieldsetgruppe-->
-				<legend>Må vi kontakte dig på din telefon?</legend>
-				<!--radiobutton skal have samme 'name' for at der kun kan vælges en knap og denne kan ses som værende en gruppe-->
-				<input id="ja" type="radio" value="ja" name="kontaktes">
-				<label for="ja">Ja</label>
-				
-				<input id="nej" type="radio" value="nej" name="kontaktes">
-				<label for="nej">Nej</label>
-			</fieldset>
-				
-			<input type="submit" name="submit" value="Send">
-            
-		</div>
-		</form>
-	</main>
+
+    </section>
+</main>
+
 </body>
 </html>

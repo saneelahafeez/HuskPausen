@@ -198,31 +198,83 @@ footer a:hover {
     position: relative;
 }
 
+.kontakt_container{
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: #e8efe2;
+    font-size: 14pt;
+    color: #10370c;
+    border-radius: 10px;
+    margin-top: 10px;
 
 
-
-.contact-page {
-    text-align: center;
-    padding: 4em 2em;
 }
 
-.contact-page h1 { font-size: 2em; margin-bottom: 1em; }
-.contact-page p { font-size: 1.2em; margin-bottom: 2em; color: hsl(0, 20%, 98%); }
+.kontakt_container label{
 
-.contact-button {
-    display: inline-block;
-    padding: 1em 2em;
-    font-size: 1.2em;
+    margin-left: 10px;
+}
+
+
+/* style tekst box i formular */
+.txt_style{
+ 
+    background-color: #e8efe2; 
+    border: 2px solid  #10370c; 
+    height: 35px;
+    width: 60%;
+    border-radius: 10px;
+    margin-bottom: 7px;
+    margin-left: 10px;
+
+   
+}
+
+
+/* besked box */
+.ar_style {
+
+    background-color:#e8efe2; 
+    border: 2px solid  #10370c; 
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+   
+
+}
+
+fieldset {
+    border: 2px solid #10370c;   /* ændrer farven */
+    border-radius: 10px;         /* mere bløde hjørner */
+    padding: 10px 15px;          /* lidt luft indeni */
+    background-color: #e8efe2;   /* valgfrit: giver baggrund */
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.style_buttom{
+
+    background-color: #10370c;
     color: white;
-    background-color: #0077cc;
-    border: none;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-    margin-top: 1em;
+    margin-top: 20px;
+    height: 30px;
+    width: 40%;
+    margin-left: 150px;
+    margin-bottom: 50px;
+    /* text-decoration: double; */
+
 }
 
-.contact-button:hover { background-color: #005fa3; }
+.kontakt_container button:hover {
+
+    color:#e8efe2;
+    background-color: blue;
+
+
+}
 
 /* --- DESKTOP  --- */
 @media screen and (min-width: 769px) {
@@ -269,10 +321,31 @@ footer a:hover {
     margin: 1em 5em 2em 3em; /* top, højre, bund, venstre */
 }
 
+
+
 .style_vd{
     height: 200px;
     width: 100%;
 }
+
+.kontakt_container {
+        margin: 40px;   /* giver hvid luft højre og venstre */
+        padding: 20px;
+    }
+
+    .txt_style,
+    .ar_style,
+    .style_buttom {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    fieldset div {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
 
     footer {
         display: flex;

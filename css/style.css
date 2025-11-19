@@ -15,8 +15,8 @@ html,body{
 
 h1 { font-size: 2rem; font-weight: bold; color: #222; padding-bottom: 1em;}
 h2 { font-size: 1.5rem; font-weight: 600; color: #333; padding-bottom: 1em;}
-h3 { font-size: 1.2rem; font-weight: 600; color: #f8f3f3; }
-h4 { font-size: 1rem; font-weight: 600; color: #555; }
+h3 { font-size: 1.2rem; font-weight: 600; color: #333; }
+h4 { font-size: 1rem; font-weight: 600; color: #faf9f9; }
 
 img { max-width: 100%; height: auto; }
 
@@ -103,7 +103,8 @@ main {
 
 main section p {
 
-line-height: 20px;
+line-height: 28px;
+font-size: 1.3em;
 
 }
 
@@ -255,23 +256,54 @@ fieldset {
     margin-right: 10px;
 }
 
-.style_buttom{
+.style_button{
 
-    background-color: #10370c;
+    background-color: #3851e3;
+    align-content: center;
+    color: white;
+    padding: 0.8em 1.5em;
+    border: none;
+    border-radius: 4px;
+    width:100%;
+    margin-top: 1em;
+    font-size: 18px;
+    height: 55px;
+    width: 60%;
+    cursor: pointer;
+    text-decoration: none; /* fjerner underline */
+    text-align: center;
+}
+
+    .Button-container {
+    display: flex;
+    justify-content: center; /* centrerer vandret */
+    margin-top: 0.5em; /* afstand fra elementer ovenfor */
+    margin-bottom: 0.9em;
+}
+
+
+    /* background-color: #5740cb;
     color: white;
     margin-top: 20px;
-    height: 30px;
-    width: 40%;
+    height: 55px;
+    width: 60%;
     margin-left: 150px;
-    margin-bottom: 50px;
+    margin-bottom: 50px; */
     /* text-decoration: double; */
 
+
+/* Centrerer knappen */
+.button-container {
+    display: flex;
+    justify-content: center; /* centrerer vandret */
+    margin-top: 1em;         /* afstand fra teksten */
 }
+
 
 .kontakt_container button:hover {
 
     color:#e8efe2;
-    background-color: blue;
+    background-color: #10370c;
 
 
 }

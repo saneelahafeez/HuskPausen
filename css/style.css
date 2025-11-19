@@ -20,21 +20,44 @@ h4 { font-size: 1rem; font-weight: 600; color: #faf9f9; }
 
 img { max-width: 100%; height: auto; }
 
-/* --- HEADER --- */
+/* --- Header layout --- */
 header {
     background-color: #10370c;
     padding: 0.5em 1em;
     display: flex;
+    align-items: flex-start;
     justify-content: space-between;
-    align-items: center;
-    position: relative;
+    margin-bottom: 0.2em;
  
 }
+
+
+/* Logo + brand nav container */
+.logo-container {
+    display: flex;
+    align-items: left;
+    text-decoration: none; /* fjerner underline hvis link */
+    gap: 0.2em;
+    margin-top: 0.5em; /* skubber hele logo + brand lidt ned */
+    margin-left: 0.2em;
+    margin-bottom: 0.2em;
+}
+
+
+.brand-name {
+    /* margin: 0;          fjerner H1's default spacing */
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-left: 0;
+    color: #f7f4f4;
+    margin-top: 0.5em;
+}
+
 
 .logo {
     height: 50px;
     width: 50px;
-    border-radius: 50%;
+    border: 2.5px solid white; /* hvid kant, 2px tykkelse */
  
 }
 
@@ -103,8 +126,8 @@ main {
 
 main section p {
 
-line-height: 28px;
-font-size: 1.3em;
+line-height: 1.7;
+font-size: 1.2em;
 
 }
 
@@ -125,21 +148,40 @@ hr {
     border-radius: 5px;
 }
 
-.bg-gul {
+.bg-1 {
     background-color: rgb(237, 239, 229);
     padding: 2em;
 }
 
-.bg-grå {
+.bg-1 li {
+    font-size: 1em;
+    color: #333;
+    line-height: 1.7;
+}
+
+
+.bg-2 {
     background-color: rgb(192, 215, 201);
     padding: 2em;
 
 }
 
-.bg-blå {
-    background-color: rgb(141, 171, 139);
+.bg-2 li {
+    font-size: 1em;
+    color: #333;
+    line-height: 1.7;
+}
+
+.bg-3 {
+    background-color: rgb(176, 192, 174);
     padding: 2em;
     margin-bottom: 1em;
+}
+
+.bg-3 li {
+    font-size: 1em;
+    color: #333;
+    line-height: 1.7;
 }
 
 

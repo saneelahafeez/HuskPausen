@@ -94,8 +94,10 @@ nav li a {
 button#bars {
     background: transparent;
     border: none;
-    font-size: 1.5em;
+    font-size: 2.5em;  /* større ikon */
     color: white; /* gør bars hvide */
+    height: 40px;        /* eller 45–50px alt efter ikonstørrelse */
+    padding: 0;          /* så den ikke skubber sig selv op */
 }
 
 /* Når burgermenuen er aktiv */
@@ -106,6 +108,7 @@ button#bars {
     left: 0;
     background-color: rgb(220, 240, 214);
     width: 100%;
+    
 }
 
  /* Når burgermenuen er åben, Det aktive link bliver tydeligt når man hover */
@@ -154,7 +157,7 @@ hr {
 }
 
 .bg-1 li {
-    font-size: 1em;
+    font-size: 1.2em;
     color: #333;
     line-height: 1.7;
 }
@@ -167,7 +170,7 @@ hr {
 }
 
 .bg-2 li {
-    font-size: 1em;
+    font-size: 1.2em;
     color: #333;
     line-height: 1.7;
 }
@@ -179,7 +182,7 @@ hr {
 }
 
 .bg-3 li {
-    font-size: 1em;
+    font-size: 1.2em;
     color: #333;
     line-height: 1.7;
 }
@@ -227,8 +230,6 @@ footer a:hover {
 }
 
 
-
-
 /* Kontakt-knap */
 
 .a{
@@ -241,6 +242,42 @@ footer a:hover {
     position: relative;
 }
 
+.intro p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #222222;
+    margin-bottom: 1em;
+}
+
+.success-stories .story img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover; /* beskærer billedet uden at forvride det */
+    border-radius: 10%;
+    margin-bottom: 1em;
+} 
+
+.success-stories .story {
+  display: flex;             
+  align-items: center;       
+  gap: 1em;                  /* afstand mellem billede og tekst */
+  margin-bottom: 2em;        /* afstand mellem stories */
+  background-color: #f5f5f5; 
+  padding: 1em;
+  border-radius: 8px;
+}
+
+.success-stories .story-text h3 {
+  margin: 0 0 0.3em 0;
+  font-size: 1.1em;
+}
+
+.success-stories .story-text p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+
 .kontakt_container{
 
     display: flex;
@@ -251,8 +288,6 @@ footer a:hover {
     color: #10370c;
     border-radius: 10px;
     margin-top: 10px;
-
-
 }
 
 .kontakt_container label{
@@ -322,16 +357,6 @@ fieldset {
     margin-top: 0.5em; /* afstand fra elementer ovenfor */
     margin-bottom: 0.9em;
 }
-
-
-    /* background-color: #5740cb;
-    color: white;
-    margin-top: 20px;
-    height: 55px;
-    width: 60%;
-    margin-left: 150px;
-    margin-bottom: 50px; */
-    /* text-decoration: double; */
 
 
 /* Centrerer knappen */
